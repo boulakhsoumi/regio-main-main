@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/images/ordinateur_portable.jpg",
+      "nom": "Ordinateur Portable"
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/images/casque_audio.jpg",
+      "nom": "Casque Audio"
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/images/smartphone.jpg",
+      "nom": "Smartphone"
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/images/montre_connectee.jpg",
+      "nom": "Montre Connectée"
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/images/appareil_photo.jpg",
+      "nom": "Appareil Photo Numérique"
+    }
+   
+  ]
+  

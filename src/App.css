@@ -1,0 +1,45 @@
+.P-NAV {
+  background-color: #00274d; /* أزرق داكن أنيق */
+  padding: 10px 20px; /* نفس المسافة الداخلية */
+}
+
+.P-NAV ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.P-NAV li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.P-NAV a {
+  color: #f8f8f8; /* أبيض خفيف */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.P-NAV a:hover {
+  color: #f1c40f; /* ذهبي فاخر عند الـ Hover */
+}
+
+.P-NAV input[type="search"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #f1c40f; /* ذهبي */
+  background-color: #f8f8f8; /* أبيض ناعم */
+  color: #333; /* نص داكن */
+}
+
+.P-NAV input[type="search"]:focus {
+  outline: none;
+  border-color: #ff5500; /* برتقالي أنيق عند التركيز */
+}
+
+
+

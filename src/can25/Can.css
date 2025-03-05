@@ -1,0 +1,47 @@
+
+  .caard{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .card h1 {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #555;
+    margin: 4px 0;
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: translateY(-10px);  /* Remonte la carte légèrement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Ombre plus marquée */
+  }
+  
+  .card-container {
+    margin-top: 20px;
+  }
+  

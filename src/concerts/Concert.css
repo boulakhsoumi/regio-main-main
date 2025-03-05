@@ -1,0 +1,102 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Titre principal */
+  h1 {
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  /* Conteneur des cartes */
+  .caard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px;
+  }
+  
+  /* Style des cartes avec taille fixe */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 320px; /* Largeur fixe */
+    height: 380px; /* Hauteur fixe */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pour un alignement homogène */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image du concert avec taille fixe */
+  .card img {
+    border-radius: 8px;
+    width: 100%;
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Ajuste l'image pour remplir sans déformer */
+  }
+  
+  /* Nom de l'artiste */
+  .card h1 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    flex-grow: 1; /* Permet d'occuper l'espace restant */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Informations sur le concert */
+  .card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Bouton d'achat */
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Bouton Voir plus */
+  .voirplus {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .voirplus:hover {
+    background-color: #0056b3;
+  }
+  
