@@ -34,7 +34,7 @@ export default function Animation() {
     const visibleImages = images.slice(startIndex, startIndex + itemsPerPage);
 
     return (
-        <div className="slider-container">
+        <div className="sliderR-container">
             <div className="slider-images">
                 {visibleImages.map((img, index) => (
                     <div className="slider-item" key={index} tabIndex="0">

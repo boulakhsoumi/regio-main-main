@@ -1,47 +1,219 @@
+.can25-container {
+  padding: 80px 5%;
+  background: linear-gradient(to bottom, #f0f5ff, #e6ecf9); /* خلفية متدرجة أنيقة */
+  text-align: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.05); /* ظل داخلي خفيف باش يعطي عمق */
+}
 
-  .caard{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
+.can25-title {
+  font-size: 48px; /* كبرنا الخط باش يبان مزيان */
+  color: #ff5500; /* اللون الأساسي يتماشى مع ألوان الموقع */
+  text-transform: uppercase;
+  font-weight: 900; /* عريض بزاف باش يكون Catchy */
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); /* ظل خفيف يعطي العمق */
+  font-family: 'Arial', sans-serif; /* تأكد من الخط */
+  animation: fadeInDown 0.8s ease-out;
+}
 
+/* أنيميشن نزول */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
   }
-  
-  .card {
-    border: 1px solid #ddd;
-    padding: 16px;
-    margin: 16px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 320px;
-    background-color: #fff;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  to {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-  
-  .card h1 {
-    font-size: 1.2em;
-    margin: 8px 0;
-  }
-  
-  .card p {
-    font-size: 1em;
-    color: #555;
-    margin: 4px 0;
-  }
-  
-  /* Hover effect */
-  .card:hover {
-    transform: translateY(-10px);  /* Remonte la carte légèrement */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Ombre plus marquée */
-  }
-  
-  .card-container {
-    margin-top: 20px;
-  }
-  
+}
+
+
+/* الشبكة */
+.can25-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* البطاقة */
+.match-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* تأثير Hover */
+.match-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* الصورة */
+.match-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+.match-card:hover .match-image {
+  filter: brightness(1.1);
+}
+
+/* المعلومات */
+.match-info {
+  padding: 15px;
+  color: #444;
+  text-align: left;
+}
+
+/* أسماء الفرق */
+.match-teams {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #001f3f;
+}
+
+/* تفاصيل التوقيت والملعب */
+.match-stadium, .match-time {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* العد التنازلي */
+.countdown-timer {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff5500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 8px 0;
+}
+
+/* لو الماتش بدا */
+.match-started {
+  color: red;
+  font-weight: bold;
+}
+
+/* السعر */
+.match-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  margin: 5px 0;
+}
+
+.static-price {
+  color: #ff5500;
+  font-size: 18px;
+}
+
+.match-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* الصورة */
+.match-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+/* المعلومات */
+.match-info {
+  padding: 15px;
+  color: #444;
+  text-align: left;
+  flex-grow: 1;
+}
+
+/* زر الشراء */
+.buy-ticket-btn1 {
+  background-color: #ff5500;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+  border-top: 1px solid #eee;
+  margin-top: auto; /* هادي تضمن أن البوتون يبقى دائما لاصق في الأسفل */
+}
+
+.buy-ticket-btn1:hover {
+  background-color: #e64a19;
+}
+
+
+.match-card:hover .buy-ticket-btn {
+  opacity: 1;
+  transform: translateY(-10px);
+  bottom: 0;
+}
+
+/* أنيميشن Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* أنيميشن Fade In Up */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.voir-plus-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.voir-plus-btn {
+  display: inline-block;
+  background: linear-gradient(to right, #ff5500, #ff7744);
+  color: white;
+  text-decoration: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.voir-plus-btn:hover {
+  background: #ff5500;
+  transform: translateY(-3px);
+}

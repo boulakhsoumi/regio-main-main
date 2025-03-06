@@ -1,102 +1,154 @@
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.concert-container1 {
+  padding: 80px 5%;
+  background-color: #fdf2e9;
+  text-align: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.concert-title1 {
+ 
+    font-size: 48px; /* كبرنا الخط باش يبان مزيان */
+    color: #e63946; /* اللون الأساسي يتماشى مع ألوان الموقع */
+    text-transform: uppercase;
+    font-weight: 900; /* عريض بزاف باش يكون Catchy */
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); /* ظل خفيف يعطي العمق */
+    font-family: 'Arial', sans-serif; /* تأكد من الخط */
+    animation: fadeInDown 0.8s ease-out;
   }
-  
-  /* Titre principal */
-  h1 {
-    color: #333;
-    margin: 20px 0;
-  }
-  
-  /* Conteneur des cartes */
-  .caard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 50px;
-  }
-  
-  /* Style des cartes avec taille fixe */
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    width: 320px; /* Largeur fixe */
-    height: 380px; /* Hauteur fixe */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Pour un alignement homogène */
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Image du concert avec taille fixe */
-  .card img {
-    border-radius: 8px;
-    width: 100%;
-    height: 200px; /* Hauteur fixe pour toutes les images */
-    object-fit: cover; /* Ajuste l'image pour remplir sans déformer */
-  }
-  
-  /* Nom de l'artiste */
-  .card h1 {
-    font-size: 18px;
-    color: #333;
-    margin: 10px 0;
-    flex-grow: 1; /* Permet d'occuper l'espace restant */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Informations sur le concert */
-  .card p {
-    font-size: 14px;
-    color: #666;
-    margin: 5px 0;
-  }
-  
-  /* Bouton d'achat */
-  .btn-success {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .btn-success:hover {
-    background-color: #218838;
-  }
-  
-  /* Bouton Voir plus */
-  .voirplus {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .voirplus:hover {
-    background-color: #0056b3;
-  }
-  
+
+/* الشبكة */
+.concert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* البطاقة */
+.concert-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.concert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background-color: #ffe5d9;
+}
+
+/* الصورة */
+.concert-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* المعلومات */
+.concert-info {
+  padding: 15px;
+  color: #555;
+  text-align: left;
+}
+
+/* العنوان */
+.concert-title-small {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 8px;
+}
+
+/* المكان */
+.concert-lieu {
+  font-size: 14px;
+  color: #888;
+}
+
+/* الكرونو */
+.countdown-timer {
+  font-size: 15px;
+  font-weight: bold;
+  color: #e67e22;
+  margin: 10px 0;
+}
+
+/* لو بدأ الحفل */
+.concert-started {
+  color: red;
+  font-weight: bold;
+}
+
+/* السعر */
+.concert-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.static-price {
+  color: #e63946;
+  font-size: 18px;
+}
+
+/* زر الشراء */
+.buy-ticket-btn {
+  background-color: #ff5500;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  z-index: 5;
+}
+
+.concert-card:hover .buy-ticket-btn {
+  opacity: 1;
+  transform: translateY(0);
+  bottom: 0;
+}
+
+/* زر voir plus */
+.voir-plus-container {
+  margin-top: 20px;
+}
+
+.voir-plus-btn {
+  background-color: #0074D9;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.voir-plus-btn:hover {
+  transform: translateY(-3px);
+  background-color: #0056b3;
+}
+
+/* أنيميشن */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
