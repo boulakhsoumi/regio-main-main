@@ -1,0 +1,185 @@
+/* Styles pour le formulaire de connexion et d'inscription */
+.login-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    gap: 20px;
+    position: relative;
+}
+
+.login-box{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-top: 60px;
+
+}
+.signup-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.separator {
+    background: #ff5500;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 22%;
+    transform: translateY(-50%);
+    left: 43%;
+    font-size: 18px;
+}
+
+.input-field {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button, .signup-button {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-button:hover, .signup-button:hover {
+    background: #0056b3;
+}
+
+.social-text {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.facebook-button, .google-button {
+    width: 180px;
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.facebook-button {
+    background: #3b5998;
+}
+
+.google-button {
+    background: #db4437;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+/* Assure-toi que la classe .login-container a une position relative ou fixe */
+.login-container {
+    position: fixed; /* Cela va faire en sorte que le formulaire soit fixe à l'écran */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Un fond semi-transparent pour le superposer */
+    z-index: 1000; /* Assure-toi que le formulaire est au-dessus du reste du contenu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Si tu as besoin que la boîte de login soit au-dessus du fond */
+  }
+  
+  /* Ajoute un peu de style à l'arrière-plan pour donner un effet de superposition */
+  .separator {
+    z-index: 1002; /* Plus élevé que le formulaire pour qu'il soit au-dessus si nécessaire */
+  }
+/* Container pour le formulaire de connexion */
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Empêche le défilement sous la fenêtre modale */
+  }
+  
+  /* Formulaire de connexion */
+  .login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1001; /* Assurez-vous que le formulaire est au-dessus du fond */
+  }
+  
+  /* Bouton "X" pour fermer */
+  .close-btn {
+    position: absolute;
+    top: -280px;
+    right: -250px;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+    z-index: 1002; /* Assurez-vous que le bouton "X" est au-dessus de la fenêtre */
+  }
+  
+  /* Ajouter un peu de style à la page */
+  .separator {
+    z-index: 1002;
+  }
+  

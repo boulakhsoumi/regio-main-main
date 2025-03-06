@@ -39,13 +39,16 @@
 .P-NAV a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
+  padding: 8px 16px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .P-NAV a:hover {
-  color: #ff5500; /* نفس لون نقاط السلايدر */
+  background-color: #ff5500;
+  color: white;/* نفس لون نقاط السلايدر */
+  border-radius: 20px;
 }
 
 /* Search input */
