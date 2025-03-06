@@ -37,7 +37,7 @@ export default function Navbar() {
             <Link to="/">  <FaHome/>  ACCEUIL</Link>
             <Link to="/can">  <FaFutbol/>   CAN 25  </Link>
             <Link to="/concerts">  <FaMusic/>  CONCERT ET FESTIVALS</Link>
-            <Link to=""> <FaPhoneAlt/>   ABOUT US</Link>
+            <Link to="/about"> <FaPhoneAlt/>   ABOUT US</Link>
           </div>
     </div>
    
