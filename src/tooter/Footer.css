@@ -119,3 +119,83 @@
     width: 90%;
   }
 }
+/* Nouvelle section pour les moyens de paiement */
+/* Style pour l'image dans le footer */
+.footer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width:px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Ajustement du footer pour qu'il couvre bien l'espace */
+.footer {
+  background: linear-gradient(135deg, rgba(0, 51, 102, 1), rgba(0, 26, 51, 1)); 
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  width: 100%;
+  min-height: 450px; /* Augmenter la hauteur pour occuper l'espace */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Section contenant l'image */
+.footer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-right: 200px; /* Déplace l'image vers la droite */
+  background: rgba(255, 255, 255, 0.1); /* Fond transparent */
+  border-radius: 15px; /* Coins arrondis */
+  backdrop-filter: blur(10px); /* Effet de flou */
+  transition: 0.3s ease-in-out; /* Transition pour l'effet hover */
+  
+}
+
+.footer-image:hover {
+  background: rgba(255, 255, 255, 0.15); /* Effet hover */
+}
+
+/* Agrandir l'image */
+.footer-logo {
+  max-width: 750px; /* Augmenter la taille */
+  padding: 10px;
+  background: none;  
+  box-shadow: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Adapter le footer pour les petits écrans */
+@media (max-width: 768px) {
+  .footer {
+    min-height: 600px; /* Ajuster la hauteur */
+  }
+
+  .footer-logo {
+    max-width: 90%; /* Adapter à l'écran */
+  }
+}
+.no-bg {
+  background: none !important; /* Supprime le fond */
+  backdrop-filter: none !important; /* Supprime l'effet de flou si nécessaire */
+}
