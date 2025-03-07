@@ -1,15 +1,17 @@
 .concert-container1 {
   padding: 80px 5%;
-  background-color: #fdf2e9;
+  background: linear-gradient(to bottom, #f0f5ff, #e6ecf9); /* خلفية متدرجة أنيقة */
+
   text-align: center;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
 }
 
 .concert-title1 {
- 
+    background-image: url(/public/can-back.PNG);
+  padding: 20px;
     font-size: 48px; /* كبرنا الخط باش يبان مزيان */
-    color: #e63946; /* اللون الأساسي يتماشى مع ألوان الموقع */
+    color:  #ff5500; /* اللون الأساسي يتماشى مع ألوان الموقع */
     text-transform: uppercase;
     font-weight: 900; /* عريض بزاف باش يكون Catchy */
     letter-spacing: 1.5px;
