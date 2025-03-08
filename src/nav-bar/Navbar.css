@@ -29,10 +29,16 @@
 
 /* Logo */
 .P-NAV .logo {
-  font-size: 22px;
+  font-size: 24px; /* Augmenter légèrement la taille */
   font-weight: bold;
   text-transform: uppercase;
-  color: #f1c40f; /* لون ذهبي مميز */
+  color: #f1c40f; /* Couleur dorée */
+  font-family: 'Poppins', sans-serif; /* Changer la police en Poppins par exemple */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* S'assurer que l'élément occupe toute la largeur */
 }
 
 /* Links */

@@ -11,27 +11,38 @@ function About() {
       
       <div className="container">
         <header className="App-header">
-          <h1>Qui sommes nous ?</h1>
+          <h1>Qui sommes-nous ?</h1>
         </header>
+        
         <section className="content">
-          <p>Guichet.ma est une plateforme innovante dédiée aux bonnes affaires en ligne. Véritable guichet unique, le site internet et l’application Guichet.ma vous permettent d’acheter en un clic vos tickets d’événements à prix coûtant ou de profiter de deals à prix réduits.</p>
+          <p><strong>WRI9A</strong> est une plateforme innovante dédiée aux bonnes affaires en ligne. Véritable guichet unique, le site internet et l’application **WRI9A** vous permettent d’acheter en un clic vos tickets d’événements à prix coûtant ou de profiter d’offres exclusives à prix réduits.</p>
           
-          <p>Tout est simplifié pour vous permettre d’économiser du temps, de l’énergie et de l’argent. Chaque produit ou service qui vous intéresse fait l’objet d’un compte à rebours.</p>
+          <p>Tout est simplifié pour vous permettre d’économiser du temps, de l’énergie et de l’argent. Chaque produit ou service qui vous intéresse est accompagné d’un **compte à rebours** indiquant sa disponibilité.</p>
           
           <h2>Vous êtes acheteur</h2>
-          <p>La démarche d’inscription est simple. En 60 secondes chrono, vous pouvez créer votre compte utilisateur pour acheter des tickets ou pour profiter de deals. Les transactions se font en ligne : choisissez le(s) produits ou services qui vous intéressent, ajoutez-les dans le panier en un clic, optez pour un mode de paiement (sécurisé online, Wafacash ou autre), enregistrez ou imprimez votre bon d’achat envoyé par e-mail… Ensuite, rendez-vous à votre événement (billetterie) ou chez votre vendeur (deal).</p>
+          <p>L’inscription est rapide et simple. En **60 secondes chrono**, créez votre compte utilisateur et accédez à une multitude d’événements et d’offres exclusives.</p>
           
+          <ul>
+            <li>Ajoutez les billets ou deals à votre panier.</li>
+            <li>Choisissez votre mode de paiement (paiement sécurisé en ligne, Wafacash, etc.).</li>
+            <li>Recevez votre bon d’achat ou e-ticket par e-mail.</li>
+            <li>Profitez de votre événement ou de votre offre en toute sérénité.</li>
+          </ul>
+
           <h2>Vous êtes vendeur</h2>
-          <p>Inscrivez-vous en ligne ou contactez notre service commercial pour connaître nos conditions de vente. Proposez votre produit ou service à vendre en indiquant soigneusement le prix, les quantités, les dates de mise à disposition et autres modalités. Suivez en temps réel l’évolution de votre offre à travers divers indicateurs : compte à rebours, nombre de clics, d’achats.</p>
+          <p>Inscrivez-vous en ligne ou contactez notre service commercial pour découvrir nos **conditions de vente avantageuses**. Mettez en ligne votre produit ou service en définissant le prix, les quantités disponibles et les dates de mise en vente.</p>
           
-          <h3>1. BILLETS & TICKETS</h3>
-          <p>Guichet.ma simplifie vos achats/ventes de tickets et billets pour tous types d’événements (pièces de théâtre, matchs de football, concerts de musique, festivals, formations, etc.).</p>
+          <h3>🎟️ BILLETS & TICKETS</h3>
+          <p>**WRI9A** facilite l’achat et la vente de **tickets et billets** pour tous types d’événements : **pièces de théâtre, matchs de football, concerts, festivals, formations** et bien plus encore.</p>
           
-          <h3>Pour en savoir plus</h3>
-          <p>Guichet.ma est une plateforme d’intermédiation entre clients et vendeurs développée par l’entreprise Guichet Maroc SARL basée à Casablanca. Créée en 2018, Guichet Maroc est une société spécialisée dans la vente et la commercialisation de la billetterie.</p>
+          <h3>📍 À propos</h3>
+          <p>**WRI9A** est une plateforme d’intermédiation entre clients et vendeurs, développée par **WRI9A SARL**, une entreprise basée à Casablanca. Créée en **2018**, **WRI9A SARL** est spécialisée dans la vente et la commercialisation de la billetterie et des offres exclusives.</p>
+
+          <p>🔥 **Rejoignez-nous dès maintenant et accédez aux meilleures offres en un clic !**</p>
         </section>
       </div>
-      <Footer/>
+      
+      <Footer />
     </div>
   );
 }

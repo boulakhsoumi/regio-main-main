@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="P-NAV">
         <ul className="left-items">
           <li>
-            <Link to="/" className="logo">Logo</Link>
+            <Link to="/" className="logo">WRI9A</Link>
           </li>
           <li>
             <input type="search" placeholder="rechercher" />
